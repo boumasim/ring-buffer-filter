@@ -1,8 +1,8 @@
-workspace(name = "envoy_filter_example")
+workspace(name = "ring_buffer_filter")
 
 local_repository(
     name = "envoy",
-    path = "{ENVOY_SRCDIR}",
+    path = "envoy",
 )
 
 load("@envoy//bazel:api_binding.bzl", "envoy_api_binding")
