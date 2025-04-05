@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package ring_filter;
+package ring.filter;
 
 import "validate/validate.proto";
 

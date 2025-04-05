@@ -1,9 +1,14 @@
 #pragma once
 
-#include "envoy/envoy/http/filter.h"
-#include "envoy/envoy/http/header_map.h"
-#include "envoy/envoy/buffer/buffer.h"
-#include "envoy/envoy/http/metadata_interface.h"
+// #include "envoy/envoy/http/filter.h"
+// #include "envoy/envoy/http/header_map.h"
+// #include "envoy/envoy/buffer/buffer.h"
+// #include "envoy/envoy/http/metadata_interface.h"
+
+#include "envoy/http/filter.h"
+#include "envoy/http/header_map.h"
+#include "envoy/buffer/buffer.h"
+#include "envoy/http/metadata_interface.h"
 
 #include "ring_buffer_filter.pb.h"
 
@@ -12,7 +17,7 @@ namespace Http{
 
 class RingBufferFilterConfig {
 public:
-  RingBufferFilterConfig(const ring_filter::Config& )  ;
+  RingBufferFilterConfig(const ring::filter::Config& )  ;
 private:
 };
 

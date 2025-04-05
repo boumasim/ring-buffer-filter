@@ -5,7 +5,7 @@
 namespace Envoy{
 namespace Http{
 
-RingBufferFilterConfig::RingBufferFilterConfig(const ring_filter::Config&){};
+RingBufferFilterConfig::RingBufferFilterConfig(const ring::filter::Config&){};
 
 RingBufferFilter::RingBufferFilter(const RingBufferFilterConfigSharedPtr& config) : config_(config) {};
 
